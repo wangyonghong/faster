@@ -7,4 +7,4 @@ deploy:
   keep-history: false
   on:
     branch: master
-script: bundle exec jekyll build
+script: bundle exec jekyll build && mv CNAME _site
