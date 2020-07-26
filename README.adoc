@@ -1,3 +1,6 @@
+link:https://github.com/wangyonghong/faster[wangyonghong/faster]
+image:https://travis-ci.com/wangyonghong/faster.svg?branch=master["Build Status", link="https://travis-ci.com/wangyonghong/faster"]
+
 > 很多时候我们想要下载软件，但是苦于几 kb 的网速，本仓库就是来解决这个问题的，本仓库将会收集一些软件安装包，或者其他静态资源的下载地址。
 > 
 > 其中有些链接的状态可能更新不及时，如有发现，请提 link:https://github.com/wangyonghong/faster/issues/new[issue] 或 pull request。
