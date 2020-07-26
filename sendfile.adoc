@@ -33,4 +33,3 @@ image:https://img.shields.io/badge/Firefox Send-temporarily unavailable-red?styl
 
 NOTE: Firefox Send is temporarily unavailable while we work on product improvements. We appreciate your patience while we make the Firefox Send experience better.
 
-'''
