@@ -5,3 +5,4 @@ deploy:
   keep_history: true
   on:
     branch: master
+script: bundle exec jekyll build
