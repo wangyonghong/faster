@@ -1,8 +1,10 @@
 deploy:
   provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  keep_history: true
+  github-token: $GITHUB_TOKEN
+  local-dir: _site
+  target-branch: gh-pages
+  skip-cleanup: true
+  keep-history: false
   on:
     branch: master
 script: bundle exec jekyll build
