@@ -1,0 +1,10 @@
+- title: 软件安装包
+  url: /
+- title: Linux源镜像
+  url: /linux
+- title: Docker镜像
+  url: /docker
+- title: 其他源镜像
+  url: /other
+- title: 临时传文件
+  url: /sendfile

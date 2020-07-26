@@ -1,0 +1,110 @@
+:toc: macro
+
+include::README.adoc[]
+
+'''
+
+toc::[]
+
+'''
+
+== 其他镜像源
+
+=== Gradle
+
+https://maven.aliyun.com/mvn/guide
+image:https://img.shields.io/badge/阿里-success-green?style=flat-square&logo=appveyor[link="https://maven.aliyun.com/mvn/guide"]
+
+.build.gradle
+```
+repositories {
+    maven {
+        url 'https://maven.aliyun.com/repository/public/'
+    }
+    mavenCentral()
+}
+```
+
+.build.gradle.kts
+```
+repositories {
+    maven { 
+        url = uri("https://maven.aliyun.com/repository/public") 
+    }
+    mavenCentral()
+}
+```
+
+'''
+=== Maven
+
+https://maven.aliyun.com/mvn/guide
+image:https://img.shields.io/badge/阿里-success-green?style=flat-square&logo=appveyor[link="https://maven.aliyun.com/mvn/guide"]
+
+```xml
+<mirror>
+    <id>aliyunmaven</id>
+    <mirrorOf>*</mirrorOf>
+    <name>阿里云公共仓库</name>
+    <url>https://maven.aliyun.com/repository/public</url>
+</mirror>
+```
+
+'''
+=== NPM
+
+https://developer.aliyun.com/mirror/NPM
+image:https://img.shields.io/badge/阿里-success-green?style=flat-square&logo=appveyor[link="https://developer.aliyun.com/mirror/NPM"]
+
+'''
+=== Ruby Gems
+
+- 查找默认源
+
+```
+gem sources
+```
+
+- 移除默认源
+
+```
+gem sources --remove https://rubygems.org/
+```
+
+- 添加新源
+
+https://developer.aliyun.com/mirror/rubygems
+image:https://img.shields.io/badge/阿里-success-green?style=flat-square&logo=appveyor[link="https://developer.aliyun.com/mirror/rubygems"]
+
+```
+gem sources -a https://mirrors.aliyun.com/rubygems/
+# 如果你使用 Gemfile 和 Bundler
+bundle config mirror.https://rubygems.org https://mirrors.aliyun.com/rubygems
+```
+
+https://mirrors.tuna.tsinghua.edu.cn/help/rubygems/
+image:https://img.shields.io/badge/清华-success-green?style=flat-square&logo=appveyor[link="https://mirrors.tuna.tsinghua.edu.cn/help/rubygems/"]
+
+```
+gem sources -a https://mirrors.tuna.tsinghua.edu.cn/rubygems/
+# 如果你使用 Gemfile 和 Bundler
+bundle config mirror.https://rubygems.org https://mirrors.tuna.tsinghua.edu.cn/rubygems
+```
+
+https://mirrors.huaweicloud.com/
+image:https://img.shields.io/badge/华为-success-green?style=flat-square&logo=appveyor[link="https://mirrors.huaweicloud.com/"]
+
+```
+gem sources -a https://mirrors.huaweicloud.com/repository/rubygems/
+# 如果你使用 Gemfile 和 Bundler
+bundle config mirror.https://rubygems.org https://mirrors.huaweicloud.com/repository/rubygems
+```
+
+https://gems.ruby-china.com/
+image:https://img.shields.io/badge/Ruby China-success-green?style=flat-square&logo=appveyor[link="https://gems.ruby-china.com/"]
+
+```
+gem source -a https://gems.ruby-china.com
+# 如果你使用 Gemfile 和 Bundler
+bundle config mirror.https://rubygems.org https://gems.ruby-china.com
+```

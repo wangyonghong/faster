@@ -1,0 +1,178 @@
+== Debian /etc/apt/sources.list
+
+
+link:https://developer.aliyun.com/mirror/debian[阿里 Debian 镜像]
+image:https://img.shields.io/badge/阿里云-success-green?style=flat-square&logo=appveyor[link="https://developer.aliyun.com/mirror/debian"]
+
+link:https://mirrors.tuna.tsinghua.edu.cn/help/debian/[清华 Debian 镜像]
+image:https://img.shields.io/badge/清华源-success-green?style=flat-square&logo=appveyor[link="https://mirrors.tuna.tsinghua.edu.cn/help/Debian/"]
+
+link:https://mirrors.huaweicloud.com/[华为 CentOS 镜像]
+image:https://img.shields.io/badge/华为源-success-green?style=flat-square&logo=appveyor[link="https://mirrors.huaweicloud.com/"]
+
+=== Debian 10 buster
+
+++++
+<details>
+<summary>阿里源</summary> 
+++++
+./etc/apt/sources.list
+```
+deb http://mirrors.aliyun.com/debian/ buster main non-free contrib
+deb-src http://mirrors.aliyun.com/debian/ buster main non-free contrib
+deb http://mirrors.aliyun.com/debian-security buster/updates main
+deb-src http://mirrors.aliyun.com/debian-security buster/updates main
+deb http://mirrors.aliyun.com/debian/ buster-updates main non-free contrib
+deb-src http://mirrors.aliyun.com/debian/ buster-updates main non-free contrib
+deb http://mirrors.aliyun.com/debian/ buster-backports main non-free contrib
+deb-src http://mirrors.aliyun.com/debian/ buster-backports main non-free contrib
+```
+
+++++
+</details>
+<details>
+<summary>清华源</summary> 
+++++
+./etc/apt/sources.list
+```
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ buster main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ buster main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-updates main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-updates main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-backports main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-backports main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian-security buster/updates main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security buster/updates main contrib non-free
+```
+
+++++
+</details>
+<details>
+<summary>华为源</summary> 
+++++
+./etc/apt/sources.list
+```
+deb http://mirrors.huaweicloud.com/debian/ buster main non-free contrib
+deb-src http://mirrors.huaweicloud.com/debian/ buster main non-free contrib
+deb http://mirrors.huaweicloud.com/debian-security buster/updates main
+deb-src http://mirrors.huaweicloud.com/debian-security buster/updates main
+deb http://mirrors.huaweicloud.com/debian/ buster-updates main non-free contrib
+deb-src http://mirrors.huaweicloud.com/debian/ buster-updates main non-free contrib
+deb http://mirrors.huaweicloud.com/debian/ buster-backports main non-free contrib
+deb-src http://mirrors.huaweicloud.com/debian/ buster-backports main non-free contrib
+```
+
+++++
+</details>
+++++
+
+
+=== Debian 9 stretch
+
+++++
+<details>
+<summary>阿里源</summary> 
+++++
+./etc/apt/sources.list
+```
+deb http://mirrors.aliyun.com/debian/ stretch main non-free contrib
+deb-src http://mirrors.aliyun.com/debian/ stretch main non-free contrib
+deb http://mirrors.aliyun.com/debian-security stretch/updates main
+deb-src http://mirrors.aliyun.com/debian-security stretch/updates main
+deb http://mirrors.aliyun.com/debian/ stretch-updates main non-free contrib
+deb-src http://mirrors.aliyun.com/debian/ stretch-updates main non-free contrib
+deb http://mirrors.aliyun.com/debian/ stretch-backports main non-free contrib
+deb-src http://mirrors.aliyun.com/debian/ stretch-backports main non-free contrib
+```
+
+++++
+</details>
+<details>
+<summary>清华源</summary> 
+++++
+./etc/apt/sources.list
+```
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch-updates main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch-updates main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch-backports main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch-backports main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian-security stretch/updates main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security stretch/updates main contrib non-free
+```
+
+++++
+</details>
+<details>
+<summary>华为源</summary> 
+++++
+./etc/apt/sources.list
+```
+deb http://mirrors.huaweicloud.com/debian/ stretch main non-free contrib
+deb-src http://mirrors.huaweicloud.com/debian/ stretch main non-free contrib
+deb http://mirrors.huaweicloud.com/debian-security stretch/updates main
+deb-src http://mirrors.huaweicloud.com/debian-security stretch/updates main
+deb http://mirrors.huaweicloud.com/debian/ stretch-updates main non-free contrib
+deb-src http://mirrors.huaweicloud.com/debian/ stretch-updates main non-free contrib
+deb http://mirrors.huaweicloud.com/debian/ stretch-backports main non-free contrib
+deb-src http://mirrors.huaweicloud.com/debian/ stretch-backports main non-free contrib
+```
+
+++++
+</details>
+++++
+
+
+
+=== Debian 8 jessie
+
+++++
+<details>
+<summary>阿里源</summary> 
+++++
+./etc/apt/sources.list
+```
+deb http://mirrors.aliyun.com/debian/ jessie main non-free contrib
+deb http://mirrors.aliyun.com/debian/ jessie-proposed-updates main non-free contrib
+deb-src http://mirrors.aliyun.com/debian/ jessie main non-free contrib
+deb-src http://mirrors.aliyun.com/debian/ jessie-proposed-updates main non-free contrib
+```
+
+++++
+</details>
+<details>
+<summary>清华源</summary> 
+++++
+./etc/apt/sources.list
+```
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ jessie main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ jessie main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ jessie-updates main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ jessie-updates main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ jessie-backports main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ jessie-backports main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian-security jessie/updates main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security jessie/updates main contrib non-free
+```
+
+++++
+</details>
+<details>
+<summary>华为源</summary> 
+++++
+./etc/apt/sources.list
+```
+deb http://mirrors.huaweicloud.com/debian/ jessie main non-free contrib
+deb http://mirrors.huaweicloud.com/debian/ jessie-proposed-updates main non-free contrib
+deb-src http://mirrors.huaweicloud.com/debian/ jessie main non-free contrib
+deb-src http://mirrors.huaweicloud.com/debian/ jessie-proposed-updates main non-free contrib
+```
+
+++++
+</details>
+++++
+

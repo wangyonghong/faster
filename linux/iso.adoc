@@ -1,0 +1,45 @@
+== Download ISO
+
+=== Alpine
+
+https://mirrors.aliyun.com/alpine/
+image:https://img.shields.io/badge/阿里源-success-green?style=flat-square&logo=appveyor[link="https://mirrors.aliyun.com/alpine/"]
+
+https://mirrors.tuna.tsinghua.edu.cn/alpine/
+image:https://img.shields.io/badge/清华源-success-green?style=flat-square&logo=appveyor[link="https://mirrors.tuna.tsinghua.edu.cn/alpine/"]
+
+https://mirrors.huaweicloud.com/alpine/
+image:https://img.shields.io/badge/华为源-success-green?style=flat-square&logo=appveyor[link="https://mirrors.huaweicloud.com/alpine/"]
+
+=== CentOS
+
+https://mirrors.aliyun.com/centos/
+image:https://img.shields.io/badge/阿里源-success-green?style=flat-square&logo=appveyor[link="https://mirrors.aliyun.com/centos/"]
+
+https://mirrors.tuna.tsinghua.edu.cn/centos/
+image:https://img.shields.io/badge/清华源-success-green?style=flat-square&logo=appveyor[link="https://mirrors.tuna.tsinghua.edu.cn/centos/"]
+
+https://mirrors.huaweicloud.com/centos/
+image:https://img.shields.io/badge/华为源-success-green?style=flat-square&logo=appveyor[link="https://mirrors.huaweicloud.com/centos/"]
+
+=== Debian
+
+https://mirrors.aliyun.com/debian/
+image:https://img.shields.io/badge/阿里源-success-green?style=flat-square&logo=appveyor[link="https://mirrors.aliyun.com/debian/"]
+
+https://mirrors.tuna.tsinghua.edu.cn/debian/
+image:https://img.shields.io/badge/清华源-success-green?style=flat-square&logo=appveyor[link="https://mirrors.tuna.tsinghua.edu.cn/debian/"]
+
+https://mirrors.huaweicloud.com/debian/
+image:https://img.shields.io/badge/华为源-success-green?style=flat-square&logo=appveyor[link="https://mirrors.huaweicloud.com/debian/"]
+
+=== Ubuntu
+
+https://mirrors.aliyun.com/ubuntu/
+image:https://img.shields.io/badge/阿里源-success-green?style=flat-square&logo=appveyor[link="https://mirrors.aliyun.com/ubuntu/"]
+
+https://mirrors.tuna.tsinghua.edu.cn/ubuntu/
+image:https://img.shields.io/badge/清华源-success-green?style=flat-square&logo=appveyor[link="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/"]
+
+https://mirrors.huaweicloud.com/ubuntu/
+image:https://img.shields.io/badge/华为源-success-green?style=flat-square&logo=appveyor[link="https://mirrors.huaweicloud.com/ubuntu/"]

@@ -1,0 +1,36 @@
+:toc: macro
+
+include::README.adoc[]
+
+'''
+
+toc::[]
+
+'''
+
+== 传输临时文件
+
+=== link:https://www.lanzou.com/[蓝奏云] 
+
+image:https://img.shields.io/badge/蓝奏云-success-green?style=flat-square&logo=appveyor[link="https://www.lanzou.com/"]
+
+NOTE: 单个文件大小: 100M。存储空间: 不限制。下载流量：不限制。支持的文件类型：doc, docx, zip, rar, apk, ipa, txt, exe, 7z, e, z, ct, ke, cetrainer, db, tar, pdf, w3x, epub, mobi, azw, azw3, osk, osz, xpa, cpk, lua, jar, dmg, ppt, pptx, xls, xlsx, mp3, ipa, iso, img, gho, ttf, ttc, txf, dwg, bat, imazingapp, dll, crx, xapk, conf, deb, rp, rpm, rplib, mobileconfig, appimage, lolgezi, flac, cad, hwt, accdb, ce, xmind, enc, bds, bdi, ssf, it
+
+'''
+
+=== link:https://cowtransfer.com/[奶牛快传] 
+
+image:https://img.shields.io/badge/奶牛快传-success-green?style=flat-square&logo=appveyor[link="https://cowtransfer.com/"]
+
+NOTE: 非登录/普通登录用户单次传输文件总大小上限2GB，会员档位传输文件大小为20GB；因为WEB端基于浏览器上传，所以WEB端一个传输内上传的总文件数上限100个。如果文件个数甚多，可以先尝试用第三方压缩软件打包后传输。
+
+
+'''
+
+=== link:https://send.firefox.com/[Firefox Send]
+
+image:https://img.shields.io/badge/Firefox Send-temporarily unavailable-red?style=flat-square&logo=appveyor[link="https://send.firefox.com/"]
+
+NOTE: Firefox Send is temporarily unavailable while we work on product improvements. We appreciate your patience while we make the Firefox Send experience better.
+
+'''

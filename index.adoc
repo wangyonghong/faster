@@ -1,0 +1,6 @@
+---
+permalink: /
+---
+
+include::software.adoc[]
+
