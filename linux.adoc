@@ -1,6 +1,6 @@
 :toc: macro
 
-include::README.adoc[]
+include::before.adoc[]
 
 '''
 

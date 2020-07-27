@@ -1,5 +1,20 @@
-link:https://github.com/wangyonghong/faster[wangyonghong/faster]
-image:https://travis-ci.com/wangyonghong/faster.svg?branch=master["Build Status", link="https://travis-ci.com/wangyonghong/faster"]
+++++
+<p align="center">
+    <h2 align="center">faster</h2>
+    <p align="center">更快的下载软件！</p>
+</p>
+<p align="center">
+    <a href="https://travis-ci.com/wangyonghong/faster">
+        <img alt="Build Status" src="https://travis-ci.com/wangyonghong/faster.svg?branch=master">
+    </a>
+    <a href="https://github.com/wangyonghong/faster/issues">
+        <img alt="Issues" src="https://img.shields.io/github/issues/wangyonghong/faster?color=0088ff" />
+    </a>
+    <a href="https://github.com/wangyonghong/faster/pulls">
+        <img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/wangyonghong/faster?color=0088ff" />
+    </a>
+</p>
+++++
 
 > 很多时候我们想要下载软件，但是苦于几 kb 的网速，本仓库就是来解决这个问题的，本仓库将会收集一些软件安装包，或者其他静态资源的下载地址。
 > 
