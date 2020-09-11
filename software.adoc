@@ -15,6 +15,23 @@ toc::[]
 https://mirrors.tuna.tsinghua.edu.cn/AdoptOpenJDK/
 image:https://img.shields.io/badge/清华-success-green?style=flat-square&logo=appveyor[link="https://mirrors.tuna.tsinghua.edu.cn/AdoptOpenJDK/"]
 
+笔者维护了一个 Homebrew Tap link:https://github.com/wangyonghong/homebrew-openjdk-mirror[wangyonghong/openjdk-mirror]，使用了清华的镜像，可以更方便的安装 OpenJDK。
+
+
+```
+# tap
+brew tap wangyonghong/openjdk-mirror
+
+# 搜索
+brew search openjdk
+
+# 安装
+brew cask install tuna-adoptopenjdk8
+
+# 卸载
+brew cask uninstall tuna-adoptopenjdk8
+```
+
 '''
 === Anaconda/miniconda
 
