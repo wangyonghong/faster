@@ -24,6 +24,13 @@ image:https://img.shields.io/badge/奶牛快传-success-green?style=flat-square&
 
 NOTE: 非登录/普通登录用户单次传输文件总大小上限2GB，会员档位传输文件大小为20GB；因为WEB端基于浏览器上传，所以WEB端一个传输内上传的总文件数上限100个。如果文件个数甚多，可以先尝试用第三方压缩软件打包后传输。
 
+'''
+
+=== link:https://www.wenshushu.cn/[文叔叔]
+
+image:https://img.shields.io/badge/文叔叔-success-green?style=flat-square&logo=appveyor[link="https://www.wenshushu.cn/"]
+
+NOTE: 文叔叔是一款永不限速的网盘（云盘）产品，免费提供网络硬盘空间 20GB。支持：传文件（发文件）、收文件（收集文件）等功能，还支持查看历史记录等高级功能。
 
 '''
 
