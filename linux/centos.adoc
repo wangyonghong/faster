@@ -610,7 +610,7 @@ gpgkey=https://mirrors.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-6
 ++++
 
 
-== CentOS epel
+== CentOS /etc/yum.repos.d/epel.repo
 
 epel 有镜像机制，一般不用自己配置，这里只介绍阿里源的配置
 
@@ -649,7 +649,7 @@ sed -i 's|^metalink|#metalink|' /etc/yum.repos.d/epel*
 <details>
 <summary>阿里源</summary> 
 ++++
-
+./etc/yum.repos.d/epel.repo
 ```
 [epel]
 name=Extra Packages for Enterprise Linux 7 - $basearch
@@ -687,7 +687,7 @@ gpgcheck=0
 <details>
 <summary>阿里源</summary> 
 ++++
-
+./etc/yum.repos.d/epel.repo
 ```
 [epel]
 name=Extra Packages for Enterprise Linux 6 - $basearch
@@ -718,3 +718,157 @@ gpgcheck=0
 </details>
 ++++
 
+
+== CentOS /etc/yum.repos.d/ius.repo
+
+IUS 是一个 yum 仓库，为 RHEL 和 CentOS 提供较新版本的软件。常用的软件有：php, mariadb, tmux, haproxy, httpd, git, redis, python 等
+
+link:https://developer.aliyun.com/mirror/ius[阿里 ius 镜像]
+image:https://img.shields.io/badge/阿里源-success-green?style=flat-square&logo=appveyor[link="https://developer.aliyun.com/mirror/ius"]
+
+link:https://mirrors.tuna.tsinghua.edu.cn/ius/[清华 ius 镜像]
+image:https://img.shields.io/badge/清华源-success-green?style=flat-square&logo=appveyor[link="https://mirrors.tuna.tsinghua.edu.cn/ius/"]
+
+=== CentOS 7 ius
+
+++++
+<details>
+<summary>阿里源</summary> 
+++++
+./etc/yum.repos.d/ius.repo
+```
+[ius]
+name = IUS for Enterprise Linux 7 - $basearch
+baseurl = https://mirrors.aliyun.com/ius/7/$basearch/
+enabled = 1
+repo_gpgcheck = 0
+gpgcheck = 1
+gpgkey = https://mirrors.aliyun.com/ius/RPM-GPG-KEY-IUS-7
+
+[ius-debuginfo]
+name = IUS for Enterprise Linux 7 - $basearch - Debug
+baseurl = https://mirrors.aliyun.com/ius/7/$basearch/debug/
+enabled = 0
+repo_gpgcheck = 0
+gpgcheck = 1
+gpgkey = https://mirrors.aliyun.com/ius/RPM-GPG-KEY-IUS-7
+
+[ius-source]
+name = IUS for Enterprise Linux 7 - Source
+baseurl = https://mirrors.aliyun.com/ius/7/src/
+enabled = 0
+repo_gpgcheck = 0
+gpgcheck = 1
+gpgkey = https://mirrors.aliyun.com/ius/RPM-GPG-KEY-IUS-7
+```
+
+++++
+</details>
+++++
+
+++++
+<details>
+<summary>清华源</summary> 
+++++
+./etc/yum.repos.d/ius.repo
+```
+[ius]
+name = IUS for Enterprise Linux 7 - $basearch
+baseurl = https://mirrors.tuna.tsinghua.edu.cn/ius/7/$basearch/
+enabled = 1
+repo_gpgcheck = 0
+gpgcheck = 1
+gpgkey = https://mirrors.tuna.tsinghua.edu.cn/ius/RPM-GPG-KEY-IUS-7
+
+[ius-debuginfo]
+name = IUS for Enterprise Linux 7 - $basearch - Debug
+baseurl = https://mirrors.tuna.tsinghua.edu.cn/ius/7/$basearch/debug/
+enabled = 0
+repo_gpgcheck = 0
+gpgcheck = 1
+gpgkey = https://mirrors.tuna.tsinghua.edu.cn/ius/RPM-GPG-KEY-IUS-7
+
+[ius-source]
+name = IUS for Enterprise Linux 7 - Source
+baseurl = https://mirrors.tuna.tsinghua.edu.cn/ius/7/src/
+enabled = 0
+repo_gpgcheck = 0
+gpgcheck = 1
+gpgkey = https://mirrors.tuna.tsinghua.edu.cn/ius/RPM-GPG-KEY-IUS-7
+```
+
+++++
+</details>
+++++
+
+=== CentOS 6 ius
+
+++++
+<details>
+<summary>阿里源</summary> 
+++++
+./etc/yum.repos.d/ius.repo
+```
+[ius]
+name = IUS for Enterprise Linux 6 - $basearch
+baseurl = https://mirrors.aliyun.com/ius/6/$basearch/
+enabled = 1
+repo_gpgcheck = 0
+gpgcheck = 1
+gpgkey = https://mirrors.aliyun.com/ius/RPM-GPG-KEY-IUS-6
+
+[ius-debuginfo]
+name = IUS for Enterprise Linux 6 - $basearch - Debug
+baseurl = https://mirrors.aliyun.com/ius/6/$basearch/debug/
+enabled = 0
+repo_gpgcheck = 0
+gpgcheck = 1
+gpgkey = https://mirrors.aliyun.com/ius/RPM-GPG-KEY-IUS-6
+
+[ius-source]
+name = IUS for Enterprise Linux 6 - Source
+baseurl = https://mirrors.aliyun.com/ius/6/src/
+enabled = 0
+repo_gpgcheck = 0
+gpgcheck = 1
+gpgkey = https://mirrors.aliyun.com/ius/RPM-GPG-KEY-IUS-6
+```
+
+++++
+</details>
+++++
+
+++++
+<details>
+<summary>清华源</summary> 
+++++
+./etc/yum.repos.d/ius.repo
+```
+[ius]
+name = IUS for Enterprise Linux 6 - $basearch
+baseurl = https://mirrors.tuna.tsinghua.edu.cn/ius/6/$basearch/
+enabled = 1
+repo_gpgcheck = 0
+gpgcheck = 1
+gpgkey = https://mirrors.tuna.tsinghua.edu.cn/ius/RPM-GPG-KEY-IUS-6
+
+[ius-debuginfo]
+name = IUS for Enterprise Linux 6 - $basearch - Debug
+baseurl = https://mirrors.tuna.tsinghua.edu.cn/ius/6/$basearch/debug/
+enabled = 0
+repo_gpgcheck = 0
+gpgcheck = 1
+gpgkey = https://mirrors.tuna.tsinghua.edu.cn/ius/RPM-GPG-KEY-IUS-6
+
+[ius-source]
+name = IUS for Enterprise Linux 6 - Source
+baseurl = https://mirrors.tuna.tsinghua.edu.cn/ius/6/src/
+enabled = 0
+repo_gpgcheck = 0
+gpgcheck = 1
+gpgkey = https://mirrors.tuna.tsinghua.edu.cn/ius/RPM-GPG-KEY-IUS-6
+```
+
+++++
+</details>
+++++
