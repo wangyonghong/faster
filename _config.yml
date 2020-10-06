@@ -1,4 +1,5 @@
 title: "Can I download faster?"
 email: yonghongwang@163.com
-description: "Yes, you can!"
+description: "很多时候我们想要下载软件，但是苦于几 kb 的网速，本仓库就是来解决这个问题的，本仓库将会收集一些软件安装包，或者其他静态资源的下载地址。"
+sub-title: "Yes, you can!"
 theme: jekyll-theme-cayman
