@@ -6,5 +6,5 @@ deploy:
   skip-cleanup: true
   keep-history: false
   on:
-    branch: master
+    branch: main
 script: bundle exec jekyll build && mv CNAME _site
