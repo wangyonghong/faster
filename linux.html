@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+
+    
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Can I download faster? | 很多时候我们想要下载软件，但是苦于几 kb 的网速，本仓库就是来解决这个问题的，本仓库将会收集一些软件安装包，或者其他静态资源的下载地址。</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Can I download faster?" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="很多时候我们想要下载软件，但是苦于几 kb 的网速，本仓库就是来解决这个问题的，本仓库将会收集一些软件安装包，或者其他静态资源的下载地址。" />
+<meta property="og:description" content="很多时候我们想要下载软件，但是苦于几 kb 的网速，本仓库就是来解决这个问题的，本仓库将会收集一些软件安装包，或者其他静态资源的下载地址。" />
+<meta property="og:site_name" content="Can I download faster?" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Can I download faster?" />
+<script type="application/ld+json">
+{"description":"很多时候我们想要下载软件，但是苦于几 kb 的网速，本仓库就是来解决这个问题的，本仓库将会收集一些软件安装包，或者其他静态资源的下载地址。","headline":"Can I download faster?","@type":"WebPage","url":"/linux.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=a75f2bce5ef7933721ef48f5b0d3e852f77e3665">
+    <link rel="icon" href="/favicon.png">
+  </head>
+  <body>
+    <header class="page-header" role="banner">
+      <h1 class="project-name">Can I download faster?</h1>
+      <h2 class="project-tagline">Yes, you can!</h2>
+      
+        <a href="/" class="btn">软件安装包</a>
+      
+        <a href="/linux" class="btn">Linux源镜像</a>
+      
+        <a href="/docker" class="btn">Docker镜像</a>
+      
+        <a href="/other" class="btn">其他源镜像</a>
+      
+        <a href="/sendfile" class="btn">临时传文件</a>
+      
+      
+        <a href="https://github.com/wangyonghong/faster" class="btn">View on GitHub</a>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>很多时候我们想要下载软件，但是苦于几 kb 的网速，本仓库就是来解决这个问题的，本仓库将会收集一些软件安装包，或者其他静态资源的下载地址。</p>
+</div>
+<div class="paragraph">
+<p>其中有些链接的状态可能更新不及时，如有发现，请提 <a href="https://github.com/wangyonghong/faster/issues/new">issue</a> 或 pull request。</p>
+</div>
+</blockquote>
+</div>
+<hr>
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#download-iso">Download ISO</a>
+<ul class="sectlevel2">
+<li><a href="#alpine">Alpine</a></li>
+<li><a href="#centos">CentOS</a></li>
+<li><a href="#debian">Debian</a></li>
+<li><a href="#ubuntu">Ubuntu</a></li>
+</ul>
+</li>
+<li><a href="#alpine-etcapkrepositories">Alpine /etc/apk/repositories</a>
+<ul class="sectlevel2">
+<li><a href="#alpine-3-12">Alpine 3.12</a></li>
+<li><a href="#alpine-3-11">Alpine 3.11</a></li>
+<li><a href="#alpine-3-10">Alpine 3.10</a></li>
+</ul>
+</li>
+<li><a href="#centos-etcyum-repos-dcentos-base-repo">CentOS /etc/yum.repos.d/CentOS-Base.repo</a>
+<ul class="sectlevel2">
+<li><a href="#centos-8">CentOS 8</a></li>
+<li><a href="#centos-7">CentOS 7</a></li>
+<li><a href="#centos-6">CentOS 6</a></li>
+</ul>
+</li>
+<li><a href="#centos-etcyum-repos-depel-repo">CentOS /etc/yum.repos.d/epel.repo</a>
+<ul class="sectlevel2">
+<li><a href="#centos-8-epel">CentOS 8 epel</a></li>
+<li><a href="#centos-7-epel">CentOS 7 epel</a></li>
+<li><a href="#centos-6-epel">CentOS 6 epel</a></li>
+</ul>
+</li>
+<li><a href="#centos-etcyum-repos-dius-repo">CentOS /etc/yum.repos.d/ius.repo</a>
+<ul class="sectlevel2">
+<li><a href="#centos-7-ius">CentOS 7 ius</a></li>
+<li><a href="#centos-6-ius">CentOS 6 ius</a></li>
+</ul>
+</li>
+<li><a href="#debian-etcaptsources-list">Debian /etc/apt/sources.list</a>
+<ul class="sectlevel2">
+<li><a href="#debian-10-buster">Debian 10 buster</a></li>
+<li><a href="#debian-9-stretch">Debian 9 stretch</a></li>
+<li><a href="#debian-8-jessie">Debian 8 jessie</a></li>
+</ul>
+</li>
+<li><a href="#ubuntu-etcaptsources-list">Ubuntu /etc/apt/sources.list</a>
+<ul class="sectlevel2">
+<li><a href="#ubuntu-20-04-lts">Ubuntu 20.04 LTS</a></li>
+<li><a href="#ubuntu-18-04-lts">Ubuntu 18.04 LTS</a></li>
+<li><a href="#ubuntu-16-04-lts">Ubuntu 16.04 LTS</a></li>
+<li><a href="#ubuntu-14-04-lts">Ubuntu 14.04 LTS</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr>
+<div class="sect1">
+<h2 id="download-iso">Download ISO</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="alpine">Alpine</h3>
+<div class="paragraph">
+<p><a href="https://mirrors.aliyun.com/alpine/" class="bare">https://mirrors.aliyun.com/alpine/</a>
+<span class="image"><a class="image" href="https://mirrors.aliyun.com/alpine/"><img src="https://img.shields.io/badge/阿里源-success-green?style=flat-square&amp;logo=appveyor" alt="阿里源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/alpine/" class="bare">https://mirrors.tuna.tsinghua.edu.cn/alpine/</a>
+<span class="image"><a class="image" href="https://mirrors.tuna.tsinghua.edu.cn/alpine/"><img src="https://img.shields.io/badge/清华源-success-green?style=flat-square&amp;logo=appveyor" alt="清华源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://mirrors.huaweicloud.com/alpine/" class="bare">https://mirrors.huaweicloud.com/alpine/</a>
+<span class="image"><a class="image" href="https://mirrors.huaweicloud.com/alpine/"><img src="https://img.shields.io/badge/华为源-success-green?style=flat-square&amp;logo=appveyor" alt="华为源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="centos">CentOS</h3>
+<div class="paragraph">
+<p><a href="https://mirrors.aliyun.com/centos/" class="bare">https://mirrors.aliyun.com/centos/</a>
+<span class="image"><a class="image" href="https://mirrors.aliyun.com/centos/"><img src="https://img.shields.io/badge/阿里源-success-green?style=flat-square&amp;logo=appveyor" alt="阿里源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/centos/" class="bare">https://mirrors.tuna.tsinghua.edu.cn/centos/</a>
+<span class="image"><a class="image" href="https://mirrors.tuna.tsinghua.edu.cn/centos/"><img src="https://img.shields.io/badge/清华源-success-green?style=flat-square&amp;logo=appveyor" alt="清华源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://mirrors.huaweicloud.com/centos/" class="bare">https://mirrors.huaweicloud.com/centos/</a>
+<span class="image"><a class="image" href="https://mirrors.huaweicloud.com/centos/"><img src="https://img.shields.io/badge/华为源-success-green?style=flat-square&amp;logo=appveyor" alt="华为源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="debian">Debian</h3>
+<div class="paragraph">
+<p><a href="https://mirrors.aliyun.com/debian/" class="bare">https://mirrors.aliyun.com/debian/</a>
+<span class="image"><a class="image" href="https://mirrors.aliyun.com/debian/"><img src="https://img.shields.io/badge/阿里源-success-green?style=flat-square&amp;logo=appveyor" alt="阿里源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/debian/" class="bare">https://mirrors.tuna.tsinghua.edu.cn/debian/</a>
+<span class="image"><a class="image" href="https://mirrors.tuna.tsinghua.edu.cn/debian/"><img src="https://img.shields.io/badge/清华源-success-green?style=flat-square&amp;logo=appveyor" alt="清华源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://mirrors.huaweicloud.com/debian/" class="bare">https://mirrors.huaweicloud.com/debian/</a>
+<span class="image"><a class="image" href="https://mirrors.huaweicloud.com/debian/"><img src="https://img.shields.io/badge/华为源-success-green?style=flat-square&amp;logo=appveyor" alt="华为源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ubuntu">Ubuntu</h3>
+<div class="paragraph">
+<p><a href="https://mirrors.aliyun.com/ubuntu/" class="bare">https://mirrors.aliyun.com/ubuntu/</a>
+<span class="image"><a class="image" href="https://mirrors.aliyun.com/ubuntu/"><img src="https://img.shields.io/badge/阿里源-success-green?style=flat-square&amp;logo=appveyor" alt="阿里源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/" class="bare">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a>
+<span class="image"><a class="image" href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/"><img src="https://img.shields.io/badge/清华源-success-green?style=flat-square&amp;logo=appveyor" alt="清华源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://mirrors.huaweicloud.com/ubuntu/" class="bare">https://mirrors.huaweicloud.com/ubuntu/</a>
+<span class="image"><a class="image" href="https://mirrors.huaweicloud.com/ubuntu/"><img src="https://img.shields.io/badge/华为源-success-green?style=flat-square&amp;logo=appveyor" alt="华为源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="alpine-etcapkrepositories">Alpine /etc/apk/repositories</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://developer.aliyun.com/mirror/alpine">阿里 Alpine 镜像</a>
+<span class="image"><a class="image" href="https://developer.aliyun.com/mirror/alpine"><img src="https://img.shields.io/badge/阿里源-success-green?style=flat-square&amp;logo=appveyor" alt="阿里源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/help/alpine/">清华 Alpine 镜像</a>
+<span class="image"><a class="image" href="https://mirrors.tuna.tsinghua.edu.cn/help/alpine/"><img src="https://img.shields.io/badge/清华源-success-green?style=flat-square&amp;logo=appveyor" alt="清华源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><a href="https://mirrors.huaweicloud.com/">华为 Alpine 镜像</a>
+<span class="image"><a class="image" href="https://mirrors.huaweicloud.com/"><img src="https://img.shields.io/badge/华为源-success-green?style=flat-square&amp;logo=appveyor" alt="华为源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>sed -i 's/dl-cdn.alpinelinux.org/mirrors.huaweicloud.com/g' /etc/apk/repositories</code></pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="alpine-3-12">Alpine 3.12</h3>
+<details>
+<summary>阿里源</summary>
+<div class="listingblock">
+<div class="title">/etc/apk/repositories</div>
+<div class="content">
+<pre class="highlight"><code>http://mirrors.aliyun.com/alpine/v3.12/main
+http://mirrors.aliyun.com/alpine/v3.12/community</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>清华源</summary>
+<div class="listingblock">
+<div class="title">/etc/apk/repositories</div>
+<div class="content">
+<pre class="highlight"><code>http://mirrors.tuna.tsinghua.edu.cn/alpine/v3.12/main
+http://mirrors.tuna.tsinghua.edu.cn/alpine/v3.12/community</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>华为源</summary>
+<div class="listingblock">
+<div class="title">/etc/apk/repositories</div>
+<div class="content">
+<pre class="highlight"><code>http://mirrors.huaweicloud.com/alpine/v3.12/main
+http://mirrors.huaweicloud.com/alpine/v3.12/community</code></pre>
+</div>
+</div>
+</details>
+</div>
+<div class="sect2">
+<h3 id="alpine-3-11">Alpine 3.11</h3>
+<details>
+<summary>阿里源</summary>
+<div class="listingblock">
+<div class="title">/etc/apk/repositories</div>
+<div class="content">
+<pre class="highlight"><code>http://mirrors.aliyun.com/alpine/v3.11/main
+http://mirrors.aliyun.com/alpine/v3.11/community</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>清华源</summary>
+<div class="listingblock">
+<div class="title">/etc/apk/repositories</div>
+<div class="content">
+<pre class="highlight"><code>http://mirrors.tuna.tsinghua.edu.cn/alpine/v3.11/main
+http://mirrors.tuna.tsinghua.edu.cn/alpine/v3.11/community</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>华为源</summary>
+<div class="listingblock">
+<div class="title">/etc/apk/repositories</div>
+<div class="content">
+<pre class="highlight"><code>http://mirrors.huaweicloud.com/alpine/v3.11/main
+http://mirrors.huaweicloud.com/alpine/v3.11/community</code></pre>
+</div>
+</div>
+</details>
+</div>
+<div class="sect2">
+<h3 id="alpine-3-10">Alpine 3.10</h3>
+<details>
+<summary>阿里源</summary>
+<div class="listingblock">
+<div class="title">/etc/apk/repositories</div>
+<div class="content">
+<pre class="highlight"><code>http://mirrors.aliyun.com/alpine/v3.10/main
+http://mirrors.aliyun.com/alpine/v3.10/community</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>清华源</summary>
+<div class="listingblock">
+<div class="title">/etc/apk/repositories</div>
+<div class="content">
+<pre class="highlight"><code>http://mirrors.tuna.tsinghua.edu.cn/alpine/v3.10/main
+http://mirrors.tuna.tsinghua.edu.cn/alpine/v3.10/community</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>华为源</summary>
+<div class="listingblock">
+<div class="title">/etc/apk/repositories</div>
+<div class="content">
+<pre class="highlight"><code>http://mirrors.huaweicloud.com/alpine/v3.10/main
+http://mirrors.huaweicloud.com/alpine/v3.10/community</code></pre>
+</div>
+</div>
+</details>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="centos-etcyum-repos-dcentos-base-repo">CentOS /etc/yum.repos.d/CentOS-Base.repo</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://developer.aliyun.com/mirror/centos">阿里 CentOS 镜像</a>
+<span class="image"><a class="image" href="https://developer.aliyun.com/mirror/centos"><img src="https://img.shields.io/badge/阿里源-success-green?style=flat-square&amp;logo=appveyor" alt="阿里源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/help/centos/">清华 CentOS 镜像</a>
+<span class="image"><a class="image" href="https://mirrors.tuna.tsinghua.edu.cn/help/centos/"><img src="https://img.shields.io/badge/清华源-success-green?style=flat-square&amp;logo=appveyor" alt="清华源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://mirrors.huaweicloud.com/">华为 CentOS 镜像</a>
+<span class="image"><a class="image" href="https://mirrors.huaweicloud.com/"><img src="https://img.shields.io/badge/华为源-success-green?style=flat-square&amp;logo=appveyor" alt="华为源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<div class="sect2">
+<h3 id="centos-8">CentOS 8</h3>
+<details>
+<summary>阿里源</summary>
+<div class="listingblock">
+<div class="title">/etc/yum.repos.d/CentOS-Base.repo</div>
+<div class="content">
+<pre class="highlight"><code># CentOS-Base.repo
+#
+# The mirror system uses the connecting IP address of the client and the
+# update status of each mirror to pick mirrors that are updated to and
+# geographically close to the client.  You should use this for CentOS updates
+# unless you are manually picking other mirrors.
+#
+# If the mirrorlist= does not work for you, as a fall back you can try the
+# remarked out baseurl= line instead.
+#
+#
+
+[base]
+name=CentOS-$releasever - Base - mirrors.aliyun.com
+failovermethod=priority
+baseurl=https://mirrors.aliyun.com/centos/$releasever/BaseOS/$basearch/os/
+        http://mirrors.aliyuncs.com/centos/$releasever/BaseOS/$basearch/os/
+        http://mirrors.cloud.aliyuncs.com/centos/$releasever/BaseOS/$basearch/os/
+gpgcheck=1
+gpgkey=https://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-Official
+
+#additional packages that may be useful
+[extras]
+name=CentOS-$releasever - Extras - mirrors.aliyun.com
+failovermethod=priority
+baseurl=https://mirrors.aliyun.com/centos/$releasever/extras/$basearch/os/
+        http://mirrors.aliyuncs.com/centos/$releasever/extras/$basearch/os/
+        http://mirrors.cloud.aliyuncs.com/centos/$releasever/extras/$basearch/os/
+gpgcheck=1
+gpgkey=https://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-Official
+
+#additional packages that extend functionality of existing packages
+[centosplus]
+name=CentOS-$releasever - Plus - mirrors.aliyun.com
+failovermethod=priority
+baseurl=https://mirrors.aliyun.com/centos/$releasever/centosplus/$basearch/os/
+        http://mirrors.aliyuncs.com/centos/$releasever/centosplus/$basearch/os/
+        http://mirrors.cloud.aliyuncs.com/centos/$releasever/centosplus/$basearch/os/
+gpgcheck=1
+enabled=0
+gpgkey=https://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-Official
+
+[PowerTools]
+name=CentOS-$releasever - PowerTools - mirrors.aliyun.com
+failovermethod=priority
+baseurl=https://mirrors.aliyun.com/centos/$releasever/PowerTools/$basearch/os/
+        http://mirrors.aliyuncs.com/centos/$releasever/PowerTools/$basearch/os/
+        http://mirrors.cloud.aliyuncs.com/centos/$releasever/PowerTools/$basearch/os/
+gpgcheck=1
+enabled=0
+gpgkey=https://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-Official
+
+
+[AppStream]
+name=CentOS-$releasever - AppStream - mirrors.aliyun.com
+failovermethod=priority
+baseurl=https://mirrors.aliyun.com/centos/$releasever/AppStream/$basearch/os/
+        http://mirrors.aliyuncs.com/centos/$releasever/AppStream/$basearch/os/
+        http://mirrors.cloud.aliyuncs.com/centos/$releasever/AppStream/$basearch/os/
+gpgcheck=1
+gpgkey=https://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-Official</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>清华源</summary>
+<div class="listingblock">
+<div class="title">/etc/yum.repos.d/CentOS-Base.repo</div>
+<div class="content">
+<pre class="highlight"><code># CentOS-Base.repo
+#
+# The mirror system uses the connecting IP address of the client and the
+# update status of each mirror to pick mirrors that are updated to and
+# geographically close to the client.  You should use this for CentOS updates
+# unless you are manually picking other mirrors.
+#
+# If the mirrorlist= does not work for you, as a fall back you can try the
+# remarked out baseurl= line instead.
+#
+#
+
+
+
+[BaseOS]
+name=CentOS-$releasever - Base
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/$releasever/BaseOS/$basearch/os/
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=BaseOS&amp;infra=$infra
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+
+[AppStream]
+name=CentOS-$releasever - AppStream
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/$releasever/AppStream/$basearch/os/
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=AppStream&amp;infra=$infra
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+
+[PowerTools]
+name=CentOS-$releasever - PowerTools
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/$releasever/PowerTools/$basearch/os/
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=PowerTools&amp;infra=$infra
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+
+
+#additional packages that may be useful
+[extras]
+name=CentOS-$releasever - Extras
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/$releasever/extras/$basearch/os/
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=extras
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+
+
+
+#additional packages that extend functionality of existing packages
+[centosplus]
+name=CentOS-$releasever - Plus
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/$releasever/centosplus/$basearch/os/
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=centosplus
+gpgcheck=1
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>华为源</summary>
+<div class="listingblock">
+<div class="title">/etc/yum.repos.d/CentOS-Base.repo</div>
+<div class="content">
+<pre class="highlight"><code># CentOS-Base.repo
+#
+# The mirror system uses the connecting IP address of the client and the
+# update status of each mirror to pick mirrors that are updated to and
+# geographically close to the client.  You should use this for CentOS updates
+# unless you are manually picking other mirrors.
+#
+# If the mirrorlist= does not work for you, as a fall back you can try the
+# remarked out baseurl= line instead.
+#
+#
+
+[BaseOS]
+name=CentOS-$releasever - Base - mirrors.huaweicloud.com
+baseurl=https://mirrors.huaweicloud.com/centos/$releasever/BaseOS/$basearch/os/
+#mirrorlist=https://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=BaseOS&amp;infra=$infra
+gpgcheck=1
+gpgkey=https://mirrors.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-Official
+
+#released updates
+[AppStream]
+name=CentOS-$releasever - AppStream - mirrors.huaweicloud.com
+baseurl=https://mirrors.huaweicloud.com/centos/$releasever/AppStream/$basearch/os/
+#mirrorlist=https://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=AppStream&amp;infra=$infra
+gpgcheck=1
+gpgkey=https://mirrors.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-Official
+
+[PowerTools]
+name=CentOS-$releasever - PowerTools - mirrors.huaweicloud.com
+baseurl=https://mirrors.huaweicloud.com/centos/$releasever/PowerTools/$basearch/os/
+#mirrorlist=https://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=PowerTools&amp;infra=$infra
+gpgcheck=1
+gpgkey=https://mirrors.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-Official
+
+
+#additional packages that may be useful
+[extras]
+name=CentOS-$releasever - Extras - mirrors.huaweicloud.com
+baseurl=https://mirrors.huaweicloud.com/centos/$releasever/extras/$basearch/os/
+#mirrorlist=https://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=extras
+gpgcheck=1
+gpgkey=https://mirrors.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-Official
+
+
+#additional packages that extend functionality of existing packages
+[centosplus]
+name=CentOS-$releasever - Plus - mirrors.huaweicloud.com
+baseurl=https://mirrors.huaweicloud.com/centos/$releasever/centosplus/$basearch/os/
+#mirrorlist=https://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=centosplus
+gpgcheck=1
+enabled=0
+gpgkey=https://mirrors.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-Official</code></pre>
+</div>
+</div>
+</details>
+</div>
+<div class="sect2">
+<h3 id="centos-7">CentOS 7</h3>
+<details>
+<summary>阿里源</summary>
+<div class="listingblock">
+<div class="title">/etc/yum.repos.d/CentOS-Base.repo</div>
+<div class="content">
+<pre class="highlight"><code># CentOS-Base.repo
+#
+# The mirror system uses the connecting IP address of the client and the
+# update status of each mirror to pick mirrors that are updated to and
+# geographically close to the client.  You should use this for CentOS updates
+# unless you are manually picking other mirrors.
+#
+# If the mirrorlist= does not work for you, as a fall back you can try the
+# remarked out baseurl= line instead.
+#
+#
+
+[base]
+name=CentOS-$releasever - Base - mirrors.aliyun.com
+failovermethod=priority
+baseurl=http://mirrors.aliyun.com/centos/$releasever/os/$basearch/
+        http://mirrors.aliyuncs.com/centos/$releasever/os/$basearch/
+        http://mirrors.cloud.aliyuncs.com/centos/$releasever/os/$basearch/
+gpgcheck=1
+gpgkey=http://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-7
+
+#released updates
+[updates]
+name=CentOS-$releasever - Updates - mirrors.aliyun.com
+failovermethod=priority
+baseurl=http://mirrors.aliyun.com/centos/$releasever/updates/$basearch/
+        http://mirrors.aliyuncs.com/centos/$releasever/updates/$basearch/
+        http://mirrors.cloud.aliyuncs.com/centos/$releasever/updates/$basearch/
+gpgcheck=1
+gpgkey=http://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-7
+
+#additional packages that may be useful
+[extras]
+name=CentOS-$releasever - Extras - mirrors.aliyun.com
+failovermethod=priority
+baseurl=http://mirrors.aliyun.com/centos/$releasever/extras/$basearch/
+        http://mirrors.aliyuncs.com/centos/$releasever/extras/$basearch/
+        http://mirrors.cloud.aliyuncs.com/centos/$releasever/extras/$basearch/
+gpgcheck=1
+gpgkey=http://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-7
+
+#additional packages that extend functionality of existing packages
+[centosplus]
+name=CentOS-$releasever - Plus - mirrors.aliyun.com
+failovermethod=priority
+baseurl=http://mirrors.aliyun.com/centos/$releasever/centosplus/$basearch/
+        http://mirrors.aliyuncs.com/centos/$releasever/centosplus/$basearch/
+        http://mirrors.cloud.aliyuncs.com/centos/$releasever/centosplus/$basearch/
+gpgcheck=1
+enabled=0
+gpgkey=http://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-7
+
+#contrib - packages by Centos Users
+[contrib]
+name=CentOS-$releasever - Contrib - mirrors.aliyun.com
+failovermethod=priority
+baseurl=http://mirrors.aliyun.com/centos/$releasever/contrib/$basearch/
+        http://mirrors.aliyuncs.com/centos/$releasever/contrib/$basearch/
+        http://mirrors.cloud.aliyuncs.com/centos/$releasever/contrib/$basearch/
+gpgcheck=1
+enabled=0
+gpgkey=http://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-7</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>清华源</summary>
+<div class="listingblock">
+<div class="title">/etc/yum.repos.d/CentOS-Base.repo</div>
+<div class="content">
+<pre class="highlight"><code># CentOS-Base.repo
+#
+# The mirror system uses the connecting IP address of the client and the
+# update status of each mirror to pick mirrors that are updated to and
+# geographically close to the client.  You should use this for CentOS updates
+# unless you are manually picking other mirrors.
+#
+# If the mirrorlist= does not work for you, as a fall back you can try the
+# remarked out baseurl= line instead.
+#
+#
+
+
+[base]
+name=CentOS-$releasever - Base
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/$releasever/os/$basearch/
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=os
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-7
+
+#released updates
+[updates]
+name=CentOS-$releasever - Updates
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/$releasever/updates/$basearch/
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=updates
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-7
+
+
+
+#additional packages that may be useful
+[extras]
+name=CentOS-$releasever - Extras
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/$releasever/extras/$basearch/
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=extras
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-7
+
+
+
+#additional packages that extend functionality of existing packages
+[centosplus]
+name=CentOS-$releasever - Plus
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/$releasever/centosplus/$basearch/
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=centosplus
+gpgcheck=1
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-7</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>华为源</summary>
+<div class="listingblock">
+<div class="title">/etc/yum.repos.d/CentOS-Base.repo</div>
+<div class="content">
+<pre class="highlight"><code># CentOS-Base.repo
+#
+# The mirror system uses the connecting IP address of the client and the
+# update status of each mirror to pick mirrors that are updated to and
+# geographically close to the client.  You should use this for CentOS updates
+# unless you are manually picking other mirrors.
+#
+# If the mirrorlist= does not work for you, as a fall back you can try the
+# remarked out baseurl= line instead.
+#
+#
+
+[base]
+name=CentOS-$releasever - Base - mirrors.huaweicloud.com
+baseurl=https://mirrors.huaweicloud.com/centos/$releasever/os/$basearch/
+#mirrorlist=https://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=os
+gpgcheck=1
+gpgkey=https://mirrors.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-7
+
+#released updates
+[updates]
+name=CentOS-$releasever - Updates - mirrors.huaweicloud.com
+baseurl=https://mirrors.huaweicloud.com/centos/$releasever/updates/$basearch/
+#mirrorlist=https://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=updates
+gpgcheck=1
+gpgkey=https://mirrors.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-7
+
+#additional packages that may be useful
+[extras]
+name=CentOS-$releasever - Extras - mirrors.huaweicloud.com
+baseurl=https://mirrors.huaweicloud.com/centos/$releasever/extras/$basearch/
+#mirrorlist=https://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=extras
+gpgcheck=1
+gpgkey=https://mirrors.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-7
+
+#additional packages that extend functionality of existing packages
+[centosplus]
+name=CentOS-$releasever - Plus - mirrors.huaweicloud.com
+baseurl=https://mirrors.huaweicloud.com/centos/$releasever/centosplus/$basearch/
+#mirrorlist=https://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=centosplus
+gpgcheck=1
+enabled=0
+gpgkey=https://mirrors.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-7</code></pre>
+</div>
+</div>
+</details>
+</div>
+<div class="sect2">
+<h3 id="centos-6">CentOS 6</h3>
+<details>
+<summary>阿里源</summary>
+<div class="listingblock">
+<div class="title">/etc/yum.repos.d/CentOS-Base.repo</div>
+<div class="content">
+<pre class="highlight"><code># CentOS-Base.repo
+#
+# The mirror system uses the connecting IP address of the client and the
+# update status of each mirror to pick mirrors that are updated to and
+# geographically close to the client.  You should use this for CentOS updates
+# unless you are manually picking other mirrors.
+#
+# If the mirrorlist= does not work for you, as a fall back you can try the
+# remarked out baseurl= line instead.
+#
+#
+
+[base]
+name=CentOS-$releasever - Base - mirrors.aliyun.com
+failovermethod=priority
+baseurl=http://mirrors.aliyun.com/centos/$releasever/os/$basearch/
+        http://mirrors.aliyuncs.com/centos/$releasever/os/$basearch/
+        http://mirrors.cloud.aliyuncs.com/centos/$releasever/os/$basearch/
+gpgcheck=1
+gpgkey=http://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-6
+
+#released updates
+[updates]
+name=CentOS-$releasever - Updates - mirrors.aliyun.com
+failovermethod=priority
+baseurl=http://mirrors.aliyun.com/centos/$releasever/updates/$basearch/
+        http://mirrors.aliyuncs.com/centos/$releasever/updates/$basearch/
+        http://mirrors.cloud.aliyuncs.com/centos/$releasever/updates/$basearch/
+gpgcheck=1
+gpgkey=http://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-6
+
+#additional packages that may be useful
+[extras]
+name=CentOS-$releasever - Extras - mirrors.aliyun.com
+failovermethod=priority
+baseurl=http://mirrors.aliyun.com/centos/$releasever/extras/$basearch/
+        http://mirrors.aliyuncs.com/centos/$releasever/extras/$basearch/
+        http://mirrors.cloud.aliyuncs.com/centos/$releasever/extras/$basearch/
+gpgcheck=1
+gpgkey=http://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-6
+
+#additional packages that extend functionality of existing packages
+[centosplus]
+name=CentOS-$releasever - Plus - mirrors.aliyun.com
+failovermethod=priority
+baseurl=http://mirrors.aliyun.com/centos/$releasever/centosplus/$basearch/
+        http://mirrors.aliyuncs.com/centos/$releasever/centosplus/$basearch/
+        http://mirrors.cloud.aliyuncs.com/centos/$releasever/centosplus/$basearch/
+gpgcheck=1
+enabled=0
+gpgkey=http://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-6
+
+#contrib - packages by Centos Users
+[contrib]
+name=CentOS-$releasever - Contrib - mirrors.aliyun.com
+failovermethod=priority
+baseurl=http://mirrors.aliyun.com/centos/$releasever/contrib/$basearch/
+        http://mirrors.aliyuncs.com/centos/$releasever/contrib/$basearch/
+        http://mirrors.cloud.aliyuncs.com/centos/$releasever/contrib/$basearch/
+gpgcheck=1
+enabled=0
+gpgkey=http://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-6</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>清华源</summary>
+<div class="listingblock">
+<div class="title">/etc/yum.repos.d/CentOS-Base.repo</div>
+<div class="content">
+<pre class="highlight"><code># CentOS-Base.repo
+#
+# The mirror system uses the connecting IP address of the client and the
+# update status of each mirror to pick mirrors that are updated to and
+# geographically close to the client.  You should use this for CentOS updates
+# unless you are manually picking other mirrors.
+#
+# If the mirrorlist= does not work for you, as a fall back you can try the
+# remarked out baseurl= line instead.
+#
+#
+
+
+[base]
+name=CentOS-$releasever - Base
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/$releasever/os/$basearch/
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=os
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-6
+
+#released updates
+[updates]
+name=CentOS-$releasever - Updates
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/$releasever/updates/$basearch/
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=updates
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-6
+
+
+
+#additional packages that may be useful
+[extras]
+name=CentOS-$releasever - Extras
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/$releasever/extras/$basearch/
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=extras
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-6
+
+
+
+#additional packages that extend functionality of existing packages
+[centosplus]
+name=CentOS-$releasever - Plus
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/$releasever/centosplus/$basearch/
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=centosplus
+gpgcheck=1
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-6
+
+
+#contrib - packages by Centos Users
+[contrib]
+name=CentOS-$releasever - Contrib
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/$releasever/contrib/$basearch/
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=contrib
+gpgcheck=1
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-6</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>华为源</summary>
+<div class="listingblock">
+<div class="title">/etc/yum.repos.d/CentOS-Base.repo</div>
+<div class="content">
+<pre class="highlight"><code># CentOS-Base.repo
+#
+# The mirror system uses the connecting IP address of the client and the
+# update status of each mirror to pick mirrors that are updated to and
+# geographically close to the client.  You should use this for CentOS updates
+# unless you are manually picking other mirrors.
+#
+# If the mirrorlist= does not work for you, as a fall back you can try the
+# remarked out baseurl= line instead.
+#
+#
+
+[base]
+name=CentOS-$releasever - Base - mirrors.huaweicloud.com
+baseurl=https://mirrors.huaweicloud.com/centos/$releasever/os/$basearch/
+#mirrorlist=https://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=os
+gpgcheck=1
+gpgkey=https://mirrors.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-6
+
+#released updates
+[updates]
+name=CentOS-$releasever - Updates - mirrors.huaweicloud.com
+baseurl=https://mirrors.huaweicloud.com/centos/$releasever/updates/$basearch/
+#mirrorlist=https://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=updates
+gpgcheck=1
+gpgkey=https://mirrors.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-6
+
+#additional packages that may be useful
+[extras]
+name=CentOS-$releasever - Extras - mirrors.huaweicloud.com
+baseurl=https://mirrors.huaweicloud.com/centos/$releasever/extras/$basearch/
+#mirrorlist=https://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=extras
+gpgcheck=1
+gpgkey=https://mirrors.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-6
+
+#additional packages that extend functionality of existing packages
+[centosplus]
+name=CentOS-$releasever - Plus - mirrors.huaweicloud.com
+baseurl=https://mirrors.huaweicloud.com/centos/$releasever/centosplus/$basearch/
+#mirrorlist=https://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=centosplus
+gpgcheck=1
+enabled=0
+gpgkey=https://mirrors.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-6
+
+#contrib - packages by Centos Users
+[contrib]
+name=CentOS-$releasever - Contrib - mirrors.huaweicloud.com
+baseurl=https://mirrors.huaweicloud.com/centos/$releasever/contrib/$basearch/
+#mirrorlist=https://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=contrib
+gpgcheck=1
+enabled=0
+gpgkey=https://mirrors.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-6</code></pre>
+</div>
+</div>
+</details>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="centos-etcyum-repos-depel-repo">CentOS /etc/yum.repos.d/epel.repo</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>epel 有镜像机制，一般不用自己配置，这里只介绍阿里源的配置</p>
+</div>
+<div class="paragraph">
+<p><a href="https://developer.aliyun.com/mirror/epel">阿里 epel 镜像</a>
+<span class="image"><a class="image" href="https://developer.aliyun.com/mirror/epel"><img src="https://img.shields.io/badge/阿里源-success-green?style=flat-square&amp;logo=appveyor" alt="阿里源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/help/epel/">清华 epel 镜像</a>
+<span class="image"><a class="image" href="https://mirrors.tuna.tsinghua.edu.cn/help/epel/"><img src="https://img.shields.io/badge/清华源-success-green?style=flat-square&amp;logo=appveyor" alt="清华源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://mirrors.huaweicloud.com/">华为 epel 镜像</a>
+<span class="image"><a class="image" href="https://mirrors.huaweicloud.com/"><img src="https://img.shields.io/badge/华为源-success-green?style=flat-square&amp;logo=appveyor" alt="华为源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<div class="sect2">
+<h3 id="centos-8-epel">CentOS 8 epel</h3>
+<details>
+<summary>阿里源</summary>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell"># 安装 epel 配置包
+yum install -y https://mirrors.aliyun.com/epel/epel-release-latest-8.noarch.rpm
+# 将 repo 配置中的地址替换为阿里源镜像站地址
+sed -i 's|^#baseurl=https://download.fedoraproject.org/pub|baseurl=https://mirrors.aliyun.com|' /etc/yum.repos.d/epel*
+sed -i 's|^metalink|#metalink|' /etc/yum.repos.d/epel*</code></pre>
+</div>
+</div>
+</details>
+</div>
+<div class="sect2">
+<h3 id="centos-7-epel">CentOS 7 epel</h3>
+<details>
+<summary>阿里源</summary>
+<div class="listingblock">
+<div class="title">/etc/yum.repos.d/epel.repo</div>
+<div class="content">
+<pre class="highlight"><code>[epel]
+name=Extra Packages for Enterprise Linux 7 - $basearch
+baseurl=http://mirrors.aliyun.com/epel/7/$basearch
+failovermethod=priority
+enabled=1
+gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+
+[epel-debuginfo]
+name=Extra Packages for Enterprise Linux 7 - $basearch - Debug
+baseurl=http://mirrors.aliyun.com/epel/7/$basearch/debug
+failovermethod=priority
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+gpgcheck=0
+
+[epel-source]
+name=Extra Packages for Enterprise Linux 7 - $basearch - Source
+baseurl=http://mirrors.aliyun.com/epel/7/SRPMS
+failovermethod=priority
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+gpgcheck=0</code></pre>
+</div>
+</div>
+</details>
+</div>
+<div class="sect2">
+<h3 id="centos-6-epel">CentOS 6 epel</h3>
+<details>
+<summary>阿里源</summary>
+<div class="listingblock">
+<div class="title">/etc/yum.repos.d/epel.repo</div>
+<div class="content">
+<pre class="highlight"><code>[epel]
+name=Extra Packages for Enterprise Linux 6 - $basearch
+baseurl=http://mirrors.aliyun.com/epel/6/$basearch
+failovermethod=priority
+enabled=1
+gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
+
+[epel-debuginfo]
+name=Extra Packages for Enterprise Linux 6 - $basearch - Debug
+baseurl=http://mirrors.aliyun.com/epel/6/$basearch/debug
+failovermethod=priority
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
+gpgcheck=0
+
+[epel-source]
+name=Extra Packages for Enterprise Linux 6 - $basearch - Source
+baseurl=http://mirrors.aliyun.com/epel/6/SRPMS
+failovermethod=priority
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
+gpgcheck=0</code></pre>
+</div>
+</div>
+</details>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="centos-etcyum-repos-dius-repo">CentOS /etc/yum.repos.d/ius.repo</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>IUS 是一个 yum 仓库，为 RHEL 和 CentOS 提供较新版本的软件。常用的软件有：php, mariadb, tmux, haproxy, httpd, git, redis, python 等</p>
+</div>
+<div class="paragraph">
+<p><a href="https://developer.aliyun.com/mirror/ius">阿里 ius 镜像</a>
+<span class="image"><a class="image" href="https://developer.aliyun.com/mirror/ius"><img src="https://img.shields.io/badge/阿里源-success-green?style=flat-square&amp;logo=appveyor" alt="阿里源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/ius/">清华 ius 镜像</a>
+<span class="image"><a class="image" href="https://mirrors.tuna.tsinghua.edu.cn/ius/"><img src="https://img.shields.io/badge/清华源-success-green?style=flat-square&amp;logo=appveyor" alt="清华源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<div class="sect2">
+<h3 id="centos-7-ius">CentOS 7 ius</h3>
+<details>
+<summary>阿里源</summary>
+<div class="listingblock">
+<div class="title">/etc/yum.repos.d/ius.repo</div>
+<div class="content">
+<pre class="highlight"><code>[ius]
+name = IUS for Enterprise Linux 7 - $basearch
+baseurl = https://mirrors.aliyun.com/ius/7/$basearch/
+enabled = 1
+repo_gpgcheck = 0
+gpgcheck = 1
+gpgkey = https://mirrors.aliyun.com/ius/RPM-GPG-KEY-IUS-7
+
+[ius-debuginfo]
+name = IUS for Enterprise Linux 7 - $basearch - Debug
+baseurl = https://mirrors.aliyun.com/ius/7/$basearch/debug/
+enabled = 0
+repo_gpgcheck = 0
+gpgcheck = 1
+gpgkey = https://mirrors.aliyun.com/ius/RPM-GPG-KEY-IUS-7
+
+[ius-source]
+name = IUS for Enterprise Linux 7 - Source
+baseurl = https://mirrors.aliyun.com/ius/7/src/
+enabled = 0
+repo_gpgcheck = 0
+gpgcheck = 1
+gpgkey = https://mirrors.aliyun.com/ius/RPM-GPG-KEY-IUS-7</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>清华源</summary>
+<div class="listingblock">
+<div class="title">/etc/yum.repos.d/ius.repo</div>
+<div class="content">
+<pre class="highlight"><code>[ius]
+name = IUS for Enterprise Linux 7 - $basearch
+baseurl = https://mirrors.tuna.tsinghua.edu.cn/ius/7/$basearch/
+enabled = 1
+repo_gpgcheck = 0
+gpgcheck = 1
+gpgkey = https://mirrors.tuna.tsinghua.edu.cn/ius/RPM-GPG-KEY-IUS-7
+
+[ius-debuginfo]
+name = IUS for Enterprise Linux 7 - $basearch - Debug
+baseurl = https://mirrors.tuna.tsinghua.edu.cn/ius/7/$basearch/debug/
+enabled = 0
+repo_gpgcheck = 0
+gpgcheck = 1
+gpgkey = https://mirrors.tuna.tsinghua.edu.cn/ius/RPM-GPG-KEY-IUS-7
+
+[ius-source]
+name = IUS for Enterprise Linux 7 - Source
+baseurl = https://mirrors.tuna.tsinghua.edu.cn/ius/7/src/
+enabled = 0
+repo_gpgcheck = 0
+gpgcheck = 1
+gpgkey = https://mirrors.tuna.tsinghua.edu.cn/ius/RPM-GPG-KEY-IUS-7</code></pre>
+</div>
+</div>
+</details>
+</div>
+<div class="sect2">
+<h3 id="centos-6-ius">CentOS 6 ius</h3>
+<details>
+<summary>阿里源</summary>
+<div class="listingblock">
+<div class="title">/etc/yum.repos.d/ius.repo</div>
+<div class="content">
+<pre class="highlight"><code>[ius]
+name = IUS for Enterprise Linux 6 - $basearch
+baseurl = https://mirrors.aliyun.com/ius/6/$basearch/
+enabled = 1
+repo_gpgcheck = 0
+gpgcheck = 1
+gpgkey = https://mirrors.aliyun.com/ius/RPM-GPG-KEY-IUS-6
+
+[ius-debuginfo]
+name = IUS for Enterprise Linux 6 - $basearch - Debug
+baseurl = https://mirrors.aliyun.com/ius/6/$basearch/debug/
+enabled = 0
+repo_gpgcheck = 0
+gpgcheck = 1
+gpgkey = https://mirrors.aliyun.com/ius/RPM-GPG-KEY-IUS-6
+
+[ius-source]
+name = IUS for Enterprise Linux 6 - Source
+baseurl = https://mirrors.aliyun.com/ius/6/src/
+enabled = 0
+repo_gpgcheck = 0
+gpgcheck = 1
+gpgkey = https://mirrors.aliyun.com/ius/RPM-GPG-KEY-IUS-6</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>清华源</summary>
+<div class="listingblock">
+<div class="title">/etc/yum.repos.d/ius.repo</div>
+<div class="content">
+<pre class="highlight"><code>[ius]
+name = IUS for Enterprise Linux 6 - $basearch
+baseurl = https://mirrors.tuna.tsinghua.edu.cn/ius/6/$basearch/
+enabled = 1
+repo_gpgcheck = 0
+gpgcheck = 1
+gpgkey = https://mirrors.tuna.tsinghua.edu.cn/ius/RPM-GPG-KEY-IUS-6
+
+[ius-debuginfo]
+name = IUS for Enterprise Linux 6 - $basearch - Debug
+baseurl = https://mirrors.tuna.tsinghua.edu.cn/ius/6/$basearch/debug/
+enabled = 0
+repo_gpgcheck = 0
+gpgcheck = 1
+gpgkey = https://mirrors.tuna.tsinghua.edu.cn/ius/RPM-GPG-KEY-IUS-6
+
+[ius-source]
+name = IUS for Enterprise Linux 6 - Source
+baseurl = https://mirrors.tuna.tsinghua.edu.cn/ius/6/src/
+enabled = 0
+repo_gpgcheck = 0
+gpgcheck = 1
+gpgkey = https://mirrors.tuna.tsinghua.edu.cn/ius/RPM-GPG-KEY-IUS-6</code></pre>
+</div>
+</div>
+</details>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="debian-etcaptsources-list">Debian /etc/apt/sources.list</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://developer.aliyun.com/mirror/debian">阿里 Debian 镜像</a>
+<span class="image"><a class="image" href="https://developer.aliyun.com/mirror/debian"><img src="https://img.shields.io/badge/阿里云-success-green?style=flat-square&amp;logo=appveyor" alt="阿里云 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/help/debian/">清华 Debian 镜像</a>
+<span class="image"><a class="image" href="https://mirrors.tuna.tsinghua.edu.cn/help/Debian/"><img src="https://img.shields.io/badge/清华源-success-green?style=flat-square&amp;logo=appveyor" alt="清华源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://mirrors.huaweicloud.com/">华为 CentOS 镜像</a>
+<span class="image"><a class="image" href="https://mirrors.huaweicloud.com/"><img src="https://img.shields.io/badge/华为源-success-green?style=flat-square&amp;logo=appveyor" alt="华为源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<div class="sect2">
+<h3 id="debian-10-buster">Debian 10 buster</h3>
+<details>
+<summary>阿里源</summary>
+<div class="listingblock">
+<div class="title">/etc/apt/sources.list</div>
+<div class="content">
+<pre class="highlight"><code>deb http://mirrors.aliyun.com/debian/ buster main non-free contrib
+deb-src http://mirrors.aliyun.com/debian/ buster main non-free contrib
+deb http://mirrors.aliyun.com/debian-security buster/updates main
+deb-src http://mirrors.aliyun.com/debian-security buster/updates main
+deb http://mirrors.aliyun.com/debian/ buster-updates main non-free contrib
+deb-src http://mirrors.aliyun.com/debian/ buster-updates main non-free contrib
+deb http://mirrors.aliyun.com/debian/ buster-backports main non-free contrib
+deb-src http://mirrors.aliyun.com/debian/ buster-backports main non-free contrib</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>清华源</summary>
+<div class="listingblock">
+<div class="title">/etc/apt/sources.list</div>
+<div class="content">
+<pre class="highlight"><code># 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ buster main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ buster main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-updates main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-updates main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-backports main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-backports main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian-security buster/updates main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security buster/updates main contrib non-free</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>华为源</summary>
+<div class="listingblock">
+<div class="title">/etc/apt/sources.list</div>
+<div class="content">
+<pre class="highlight"><code>deb http://mirrors.huaweicloud.com/debian/ buster main non-free contrib
+deb-src http://mirrors.huaweicloud.com/debian/ buster main non-free contrib
+deb http://mirrors.huaweicloud.com/debian-security buster/updates main
+deb-src http://mirrors.huaweicloud.com/debian-security buster/updates main
+deb http://mirrors.huaweicloud.com/debian/ buster-updates main non-free contrib
+deb-src http://mirrors.huaweicloud.com/debian/ buster-updates main non-free contrib
+deb http://mirrors.huaweicloud.com/debian/ buster-backports main non-free contrib
+deb-src http://mirrors.huaweicloud.com/debian/ buster-backports main non-free contrib</code></pre>
+</div>
+</div>
+</details>
+</div>
+<div class="sect2">
+<h3 id="debian-9-stretch">Debian 9 stretch</h3>
+<details>
+<summary>阿里源</summary>
+<div class="listingblock">
+<div class="title">/etc/apt/sources.list</div>
+<div class="content">
+<pre class="highlight"><code>deb http://mirrors.aliyun.com/debian/ stretch main non-free contrib
+deb-src http://mirrors.aliyun.com/debian/ stretch main non-free contrib
+deb http://mirrors.aliyun.com/debian-security stretch/updates main
+deb-src http://mirrors.aliyun.com/debian-security stretch/updates main
+deb http://mirrors.aliyun.com/debian/ stretch-updates main non-free contrib
+deb-src http://mirrors.aliyun.com/debian/ stretch-updates main non-free contrib
+deb http://mirrors.aliyun.com/debian/ stretch-backports main non-free contrib
+deb-src http://mirrors.aliyun.com/debian/ stretch-backports main non-free contrib</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>清华源</summary>
+<div class="listingblock">
+<div class="title">/etc/apt/sources.list</div>
+<div class="content">
+<pre class="highlight"><code># 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch-updates main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch-updates main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch-backports main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch-backports main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian-security stretch/updates main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security stretch/updates main contrib non-free</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>华为源</summary>
+<div class="listingblock">
+<div class="title">/etc/apt/sources.list</div>
+<div class="content">
+<pre class="highlight"><code>deb http://mirrors.huaweicloud.com/debian/ stretch main non-free contrib
+deb-src http://mirrors.huaweicloud.com/debian/ stretch main non-free contrib
+deb http://mirrors.huaweicloud.com/debian-security stretch/updates main
+deb-src http://mirrors.huaweicloud.com/debian-security stretch/updates main
+deb http://mirrors.huaweicloud.com/debian/ stretch-updates main non-free contrib
+deb-src http://mirrors.huaweicloud.com/debian/ stretch-updates main non-free contrib
+deb http://mirrors.huaweicloud.com/debian/ stretch-backports main non-free contrib
+deb-src http://mirrors.huaweicloud.com/debian/ stretch-backports main non-free contrib</code></pre>
+</div>
+</div>
+</details>
+</div>
+<div class="sect2">
+<h3 id="debian-8-jessie">Debian 8 jessie</h3>
+<details>
+<summary>阿里源</summary>
+<div class="listingblock">
+<div class="title">/etc/apt/sources.list</div>
+<div class="content">
+<pre class="highlight"><code>deb http://mirrors.aliyun.com/debian/ jessie main non-free contrib
+deb http://mirrors.aliyun.com/debian/ jessie-proposed-updates main non-free contrib
+deb-src http://mirrors.aliyun.com/debian/ jessie main non-free contrib
+deb-src http://mirrors.aliyun.com/debian/ jessie-proposed-updates main non-free contrib</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>清华源</summary>
+<div class="listingblock">
+<div class="title">/etc/apt/sources.list</div>
+<div class="content">
+<pre class="highlight"><code># 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ jessie main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ jessie main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ jessie-updates main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ jessie-updates main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ jessie-backports main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ jessie-backports main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian-security jessie/updates main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security jessie/updates main contrib non-free</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>华为源</summary>
+<div class="listingblock">
+<div class="title">/etc/apt/sources.list</div>
+<div class="content">
+<pre class="highlight"><code>deb http://mirrors.huaweicloud.com/debian/ jessie main non-free contrib
+deb http://mirrors.huaweicloud.com/debian/ jessie-proposed-updates main non-free contrib
+deb-src http://mirrors.huaweicloud.com/debian/ jessie main non-free contrib
+deb-src http://mirrors.huaweicloud.com/debian/ jessie-proposed-updates main non-free contrib</code></pre>
+</div>
+</div>
+</details>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ubuntu-etcaptsources-list">Ubuntu /etc/apt/sources.list</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://developer.aliyun.com/mirror/ubuntu">阿里 Ubuntu 镜像</a>
+<span class="image"><a class="image" href="https://developer.aliyun.com/mirror/ubuntu"><img src="https://img.shields.io/badge/阿里云-success-green?style=flat-square&amp;logo=appveyor" alt="阿里云 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/">清华 Ubuntu 镜像</a>
+<span class="image"><a class="image" href="https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/"><img src="https://img.shields.io/badge/清华源-success-green?style=flat-square&amp;logo=appveyor" alt="清华源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://mirrors.huaweicloud.com/">华为 Ubuntu 镜像</a>
+<span class="image"><a class="image" href="https://mirrors.huaweicloud.com/"><img src="https://img.shields.io/badge/华为源-success-green?style=flat-square&amp;logo=appveyor" alt="华为源 success green?style=flat square&amp;logo=appveyor"></a></span></p>
+</div>
+<div class="sect2">
+<h3 id="ubuntu-20-04-lts">Ubuntu 20.04 LTS</h3>
+<details>
+<summary>阿里源</summary>
+<div class="listingblock">
+<div class="title">/etc/apt/sources.list</div>
+<div class="content">
+<pre class="highlight"><code>deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
+
+deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse
+
+deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse
+
+deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse
+
+deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>清华源</summary>
+<div class="listingblock">
+<div class="title">/etc/apt/sources.list</div>
+<div class="content">
+<pre class="highlight"><code># 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+
+# 预发布软件源，不建议启用
+# deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>华为源</summary>
+<div class="listingblock">
+<div class="title">/etc/apt/sources.list</div>
+<div class="content">
+<pre class="highlight"><code>deb http://mirrors.huaweicloud.com/ubuntu/ focal main restricted universe multiverse
+deb-src http://mirrors.huaweicloud.com/ubuntu/ focal main restricted universe multiverse
+
+deb http://mirrors.huaweicloud.com/ubuntu/ focal-security main restricted universe multiverse
+deb-src http://mirrors.huaweicloud.com/ubuntu/ focal-security main restricted universe multiverse
+
+deb http://mirrors.huaweicloud.com/ubuntu/ focal-updates main restricted universe multiverse
+deb-src http://mirrors.huaweicloud.com/ubuntu/ focal-updates main restricted universe multiverse
+
+deb http://mirrors.huaweicloud.com/ubuntu/ focal-proposed main restricted universe multiverse
+deb-src http://mirrors.huaweicloud.com/ubuntu/ focal-proposed main restricted universe multiverse
+
+deb http://mirrors.huaweicloud.com/ubuntu/ focal-backports main restricted universe multiverse
+deb-src http://mirrors.huaweicloud.com/ubuntu/ focal-backports main restricted universe multiverse</code></pre>
+</div>
+</div>
+</details>
+</div>
+<div class="sect2">
+<h3 id="ubuntu-18-04-lts">Ubuntu 18.04 LTS</h3>
+<details>
+<summary>阿里源</summary>
+<div class="listingblock">
+<div class="title">/etc/apt/sources.list</div>
+<div class="content">
+<pre class="highlight"><code>deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+
+deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+
+deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+
+deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+
+deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>清华源</summary>
+<div class="listingblock">
+<div class="title">/etc/apt/sources.list</div>
+<div class="content">
+<pre class="highlight"><code># 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+
+# 预发布软件源，不建议启用
+# deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>华为源</summary>
+<div class="listingblock">
+<div class="title">/etc/apt/sources.list</div>
+<div class="content">
+<pre class="highlight"><code>deb http://mirrors.huaweicloud.com/ubuntu/ bionic main restricted universe multiverse
+deb-src http://mirrors.huaweicloud.com/ubuntu/ bionic main restricted universe multiverse
+
+deb http://mirrors.huaweicloud.com/ubuntu/ bionic-security main restricted universe multiverse
+deb-src http://mirrors.huaweicloud.com/ubuntu/ bionic-security main restricted universe multiverse
+
+deb http://mirrors.huaweicloud.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb-src http://mirrors.huaweicloud.com/ubuntu/ bionic-updates main restricted universe multiverse
+
+deb http://mirrors.huaweicloud.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb-src http://mirrors.huaweicloud.com/ubuntu/ bionic-proposed main restricted universe multiverse
+
+deb http://mirrors.huaweicloud.com/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src http://mirrors.huaweicloud.com/ubuntu/ bionic-backports main restricted universe multiverse</code></pre>
+</div>
+</div>
+</details>
+</div>
+<div class="sect2">
+<h3 id="ubuntu-16-04-lts">Ubuntu 16.04 LTS</h3>
+<details>
+<summary>阿里源</summary>
+<div class="listingblock">
+<div class="title">/etc/apt/sources.list</div>
+<div class="content">
+<pre class="highlight"><code>deb http://mirrors.aliyun.com/ubuntu/ xenial main
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial main
+
+deb http://mirrors.aliyun.com/ubuntu/ xenial-updates main
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial-updates main
+
+deb http://mirrors.aliyun.com/ubuntu/ xenial universe
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial universe
+deb http://mirrors.aliyun.com/ubuntu/ xenial-updates universe
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial-updates universe
+
+deb http://mirrors.aliyun.com/ubuntu/ xenial-security main
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial-security main
+deb http://mirrors.aliyun.com/ubuntu/ xenial-security universe
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial-security universe</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>清华源</summary>
+<div class="listingblock">
+<div class="title">/etc/apt/sources.list</div>
+<div class="content">
+<pre class="highlight"><code># 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
+
+# 预发布软件源，不建议启用
+# deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-proposed main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-proposed main restricted universe multiverse</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>华为源</summary>
+<div class="listingblock">
+<div class="title">/etc/apt/sources.list</div>
+<div class="content">
+<pre class="highlight"><code>deb http://mirrors.huaweicloud.com/ubuntu/ xenial main
+deb-src http://mirrors.huaweicloud.com/ubuntu/ xenial main
+
+deb http://mirrors.huaweicloud.com/ubuntu/ xenial-updates main
+deb-src http://mirrors.huaweicloud.com/ubuntu/ xenial-updates main
+
+deb http://mirrors.huaweicloud.com/ubuntu/ xenial universe
+deb-src http://mirrors.huaweicloud.com/ubuntu/ xenial universe
+deb http://mirrors.huaweicloud.com/ubuntu/ xenial-updates universe
+deb-src http://mirrors.huaweicloud.com/ubuntu/ xenial-updates universe
+
+deb http://mirrors.huaweicloud.com/ubuntu/ xenial-security main
+deb-src http://mirrors.huaweicloud.com/ubuntu/ xenial-security main
+deb http://mirrors.huaweicloud.com/ubuntu/ xenial-security universe
+deb-src http://mirrors.huaweicloud.com/ubuntu/ xenial-security universe</code></pre>
+</div>
+</div>
+</details>
+</div>
+<div class="sect2">
+<h3 id="ubuntu-14-04-lts">Ubuntu 14.04 LTS</h3>
+<details>
+<summary>阿里源</summary>
+<div class="listingblock">
+<div class="title">/etc/apt/sources.list</div>
+<div class="content">
+<pre class="highlight"><code>deb https://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
+deb-src https://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
+deb https://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
+deb-src https://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
+
+deb https://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
+deb-src https://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
+
+deb https://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
+deb-src https://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
+
+## Not recommended
+# deb https://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
+# deb-src https://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>清华源</summary>
+<div class="listingblock">
+<div class="title">/etc/apt/sources.list</div>
+<div class="content">
+<pre class="highlight"><code># 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ trusty main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ trusty main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ trusty-updates main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ trusty-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ trusty-backports main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ trusty-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ trusty-security main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ trusty-security main restricted universe multiverse
+
+# 预发布软件源，不建议启用
+# deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ trusty-proposed main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ trusty-proposed main restricted universe multiverse</code></pre>
+</div>
+</div>
+</details>
+<details>
+<summary>华为源</summary>
+<div class="listingblock">
+<div class="title">/etc/apt/sources.list</div>
+<div class="content">
+<pre class="highlight"><code>deb http://mirrors.huaweicloud.com/ubuntu/ trusty main restricted universe multiverse
+deb-src http://mirrors.huaweicloud.com/ubuntu/ trusty main restricted universe multiverse
+deb http://mirrors.huaweicloud.com/ubuntu/ trusty-security main restricted universe multiverse
+deb-src http://mirrors.huaweicloud.com/ubuntu/ trusty-security main restricted universe multiverse
+
+deb http://mirrors.huaweicloud.com/ubuntu/ trusty-updates main restricted universe multiverse
+deb-src http://mirrors.huaweicloud.com/ubuntu/ trusty-updates main restricted universe multiverse
+
+deb http://mirrors.huaweicloud.com/ubuntu/ trusty-backports main restricted universe multiverse
+deb-src http://mirrors.huaweicloud.com/ubuntu/ trusty-backports main restricted universe multiverse
+
+## Not recommended
+# deb http://mirrors.huaweicloud.com/ubuntu/ trusty-proposed main restricted universe multiverse
+# deb-src http://mirrors.huaweicloud.com/ubuntu/ trusty-proposed main restricted universe multiverse</code></pre>
+</div>
+</div>
+</details>
+</div>
+</div>
+</div>
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/wangyonghong/faster">faster</a> is maintained by <a href="https://github.com/wangyonghong">wangyonghong</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <div>
+          <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+          <span id="busuanzi_container_site_uv">本站总访客数<span id="busuanzi_value_site_uv"></span>人</span>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
